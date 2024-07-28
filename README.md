@@ -13,6 +13,27 @@ with Bowtie2.
 
 More information surrounding the format of the Data directory can be found within the README in the directory.
 
+## Results
+
+These are sample results taken from applying the utilities within the tool to datasets of the Staphylococcus aureus bacteria. 
+
+![hist_hamming_distances_reads_in_assembly_vs_SRR022](https://github.com/user-attachments/assets/fdb5eb4b-74ae-42d5-bcee-7c25348301f5)
+This shows the Hamming distance between reads that were used in the program's assembly, and the whole file of reads. 
+
+![gc_content_hist_for_all](https://github.com/user-attachments/assets/e9eb6633-c7a4-4696-97bd-bca5568c4940) All reads.
+![gc_cont_hist_mapped](https://github.com/user-attachments/assets/94be9e1e-9db6-4cb5-88a1-08889ed5e4eb) Mapped reads.
+![gc_cont_hist_unmapped](https://github.com/user-attachments/assets/7f378866-18a1-4bda-89d6-d4c887eb163e) Unmapped reads.
+
+This histogram shows the GC content of all of the reads contained in the genome file, and can be compared to the mapped and unmapped histograms.
+
+![entropy_for_original_mapped_unmapped](https://github.com/user-attachments/assets/934a4175-8e42-49d9-b78f-a67e7201dbcf)
+
+These strip plots show the entropy of the files of reads. 
+
+### Other output. 
+
+The program also has functionality to BLAST any file of reads vs the Swissprot database (files not included here due to the size of them), as well as CSV files containing all of the data used to create the above plots. 
+
 ## Installation
 
 The project files must first be downloaded, and can be done using the command below, once the files have been added
